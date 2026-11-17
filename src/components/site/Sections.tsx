@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type FormEvent, type ReactNode } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Cable, Gauge, ShieldCheck, Headphones, Wifi, Check, MapPin, MessageCircle, UserCheck, Wrench, ShoppingBag, Instagram, Globe } from "lucide-react";
+import { Menu, X, Cable, Gauge, ShieldCheck, Headphones, Wifi, Check, MapPin, MessageCircle, UserCheck, Wrench, ShoppingBag, Camera, Globe } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { site, plans, faq, waLink } from "@/config/site";
 
@@ -279,7 +279,7 @@ export function Footer() {
           {nav.map(([l, h]) => <a key={h} href={h} className="text-muted-foreground hover:text-neon">{l}</a>)}
         </nav>
         <div className="flex flex-col gap-3 text-sm">
-          <a href={site.instagram} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-neon"><Instagram className="h-4 w-4" /> Instagram</a>
+          <a href={site.instagram} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-neon"><Camera className="h-4 w-4" /> Instagram</a>
           <a href={waLink(site.messages.geral)} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-neon"><MessageCircle className="h-4 w-4" /> WhatsApp</a>
           <a href={site.website} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-neon"><Globe className="h-4 w-4" /> Site oficial</a>
           <a href={site.privacyUrl} className="text-muted-foreground hover:text-neon">Política de privacidade</a>
